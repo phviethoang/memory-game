@@ -59,6 +59,7 @@ function checkAnswer(currentLevel){
         setTimeout(function(){
             $("body").removeClass("game-over");
         },200)
+        updateHighscore();
         restart();
     }
     console.log(userClickedPattern);
@@ -83,4 +84,15 @@ function restart(){
     gamePattern=[];
     $("#start-button").text("Restart");
 }
-
+//highscore
+function findHighScore(highscore,newScore){
+    if(newScore>highscore){
+        highscore=newScore;
+    }
+    return highscore;
+}
+function updateHighscore() {
+    let score = parseInt(highscore, 10);
+    highscore = findHighScore(score,level-1).toString().padStart(3, '0');
+    $("#high-score").text("High score: "+highscore);
+}
