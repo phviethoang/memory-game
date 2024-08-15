@@ -1,4 +1,5 @@
 var level=0;
+var highscore="000";
 var start=false; //chi bat dau lai tro choi khi start=false
 var gamePattern=[]; //mang ghi lai cac button random cua game sau moi level
 var userClickedPattern=[]; //mang ghi lai cac button ma nguoi choi bam
