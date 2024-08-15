@@ -63,8 +63,6 @@ function checkAnswer(currentLevel){
         updateHighscore();
         restart();
     }
-    console.log(userClickedPattern);
-    console.log(gamePattern);
 }
 //tao hieu ung khi nguoi dung nhan vao 1 nut
 function animatePressed(currentColor){
