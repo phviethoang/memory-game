@@ -11,6 +11,13 @@ $(document).on("keydown",function(){
        start=true;
    }
 })
+$("#start-button").on("click",function(){
+    if(!start){
+        $("#level-title").text("Level "+level);
+        nextSequence();
+        start=true;
+    }
+})
 //qua trinh bam nut cua nguoi choi
 $(".btn").on("click",function(){
     var userChosenColor=$(this).attr("id");
