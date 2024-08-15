@@ -81,5 +81,6 @@ function restart(){
     start=false;
     level=0;
     gamePattern=[];
+    $("#start-button").text("Restart");
 }
 
